@@ -21,7 +21,8 @@ export default class Hello360 extends React.Component {
       <View style={styles.panel}>
         <VrButton
           onClick={this._incrementCount}
-          style={styles.greetingBox}>
+          style={styles.greetingBox}
+          style={styles.borderRadius = 10}>
         <View style={styles.greetingBox}>
           <Text style={styles.greeting}>
             {`Welcome to My First VR
