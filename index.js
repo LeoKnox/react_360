@@ -21,8 +21,7 @@ export default class Hello360 extends React.Component {
       <View style={styles.panel}>
         <VrButton
           onClick={this._incrementCount}
-          style={styles.greetingBox}
-          style={styles.borderRadius = 10}>
+          style={styles.greetingBox}>
         <View style={styles.greetingBox}>
           <Text style={styles.greeting}>
             {`Welcome to My First VR
@@ -49,6 +48,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#000000',
     borderColor: '#639dda',
     borderWidth: 2,
+    borderRadius: 200
   },
   greeting: {
     fontSize: 30,
