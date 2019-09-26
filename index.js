@@ -6,6 +6,7 @@ import {
   View,
   VrButton,
 } from 'react-360';
+import { isAbsolute, relative } from 'path';
 
 export default class Hello360 extends React.Component {
   state = {
@@ -29,6 +30,9 @@ export default class Hello360 extends React.Component {
           </Text>
         </View>
         </VrButton>
+        <VrButton
+          style={styles.arc}>
+        </VrButton>
       </View>
     );
   }
@@ -42,6 +46,17 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(255, 255, 255, 0.4)',
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  arc: {
+    position: relative,
+    width: 18,
+    height: 13,
+    borderRadius: 150,
+    top: 10,
+    boxSizing: border-box,
+    borderColor: red,
+    borderWidth: 1,
+    marginBottom: 6,
   },
   greetingBox: {
     padding: 20,
