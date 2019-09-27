@@ -32,6 +32,7 @@ export default class Hello360 extends React.Component {
         </VrButton>
         <VrButton
           style={styles.arc}>
+            red
         </VrButton>
       </View>
     );
